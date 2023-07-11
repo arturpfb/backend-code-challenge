@@ -28,8 +28,6 @@ services:
     container_name: bckndcodechallenge
     command: bash init.sh
     env_file: .env
-    environment:
-      DATABASE_URL: ${DATABASE_ALEMBIC_URL}
     volumes:
       - .:/code
     depends_on:
