@@ -50,7 +50,6 @@ O desafio será avaliado através de cinco critérios.
 
 * O código foi entregue com um arquivo de README claro de como se guiar?
 * O código possui comentários pertinentes?
-* O código está em algum controle de versão?
 * Os commits são pequenos e consistentes?
 * As mensagens de commit são claras?
 
