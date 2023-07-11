@@ -1,10 +1,11 @@
 import os
-import psycopg
 
 from psycopg import sql
+from datetime import datetime, date
 
 from helpers import Formatter
 from logger import LOGGER
+from decorators import default_pgsql_err_treatment
 
 
 class Postgres:
@@ -45,9 +46,12 @@ class Postgres:
                         filters[key] = sql.SQL(",").join(
                             map(sql.Literal, value)
                         )
-                    elif isinstance(value, str):
-                        filters[key] = sql.Identifier(value)
-                    elif isinstance(value, int):
+                    elif (
+                        isinstance(value, int)
+                        or isinstance(value, str)
+                        or isinstance(value, datetime)
+                        or isinstance(value, date)
+                    ):
                         filters[key] = sql.Literal(value)
 
                 formatted_query = query.format(**filters)
@@ -80,44 +84,28 @@ class Postgres:
             LOGGER.warning(e)
             return False
 
+    @default_pgsql_err_treatment
     def execute_query(
         self, query, should_format=False, format_camel_case=False
     ):
         LOGGER.info("Executing query")
 
-        try:
-            if self.pool is None:
-                LOGGER.info(
-                    "Failed to access connection pool. Will re-open pool."
-                )
+        if self.pool is None:
+            LOGGER.info("Failed to access connection pool. Will re-open pool.")
 
-                self.pool.open()
+            self.pool.open()
 
-            with self.pool.connection() as conn:
-                LOGGER.info(query.as_string(conn))
+        with self.pool.connection() as conn:
+            LOGGER.info(query.as_string(conn))
 
-                with conn.cursor() as cur:
-                    cur.execute(query)
+            with conn.cursor() as cur:
+                cur.execute(query)
 
-                    if should_format:
-                        data = Formatter().format_cursor(
-                            cur, format_camel_case
-                        )
-                    else:
-                        data = int(cur.rowcount)
+                if should_format:
+                    data = Formatter().format_cursor(cur, format_camel_case)
+                else:
+                    data = int(cur.rowcount)
 
-                cur.close()
+            cur.close()
 
-            return data
-        except psycopg.DataError as e:
-            LOGGER.warning(f"Data Error: {e}")
-            raise Exception(f"Data Error: {e}")
-        except psycopg.OperationalError as e:
-            LOGGER.warning(f"Operational Error: {e}")
-            raise Exception(f"Operational Error: {e}")
-        except psycopg.DatabaseError as e:
-            LOGGER.warning(f"Database Error: {e}")
-            raise Exception(f"Database Error: {e}")
-        except Exception as e:
-            LOGGER.warning(f"General DB error, {e}")
-            raise Exception(f"General DB Error: {e}")
+        return data
