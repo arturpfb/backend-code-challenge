@@ -22,9 +22,9 @@ Então, vamos ao que interessa: seu desafio é criar uma aplicação em Python q
 * Guarde essas informações no banco;
 * Retorne um json com informações pertinentes da cidade/meteorologia;
 * Crie parâmetros e/ou rotas adicionais (fica a seu critério) considerando tanto condições climáticas quanto locais específicos para buscar informações como:
-** Um mapa de cidades mais populosas de acordo com um clima específico;
-** A temperatura média, umidade, velocidade do vento e etc de uma cidade dado um range de datas;
-** (BONUS) Qualquer parâmetro adicional que você queira aceitar para performar análises nas tabelas e realizar requisições diferentes nas APIs externas.
+  * Um mapa de cidades mais populosas de acordo com um clima específico;
+  * A temperatura média, umidade, velocidade do vento e etc de uma cidade dado um range de datas;
+  * (BONUS) Qualquer parâmetro adicional que você queira aceitar para performar análises nas tabelas e realizar requisições diferentes nas APIs externas.
 
 ## Observações adicionais
 
