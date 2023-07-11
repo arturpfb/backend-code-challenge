@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "backend-code-challenge"
+version = "0.1.0"
+description = ""
+authors = ["barbaramrx <=>"]
+
+[tool.poetry.dependencies]
+python = "3.11.1"
+Flask = "^2.3.2"
+webargs = "^8.2.0"
+psycopg = {version = "^3.1.7", extras = ["binary"]}
+prometheus-client = "^0.15.0"
+alembic = "^1.9.1"
+Flask-Migrate = "^4.0.0"
+Flask-Cors = "^3.0.10"
+psycopg2-binary = "^2.9.5"
+flask-google-cloud-logger = "^0.2.1"
+requests = "^2.31.0"
+gunicorn = "^20.1.0"
+gevent = "^22.10.2"
+psycopg-pool = "^3.1.5"
+werkzeug = "^2.3.3"
+python-dotenv = "^0.19.2"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+flake8 = "^6.0.0"
+pytest = "7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

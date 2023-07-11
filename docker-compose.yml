@@ -1,0 +1,46 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: pg-bckndCodeChallenge
+    image: postgres:14.1-alpine
+    env_file: .env
+    environment:
+      POSTGRES_PASSWORD: ${DBDEV_PASSWORD}
+      PGPORT: "${DBDEV_PORT}"
+      POSTGRES_USER: "${DBDEV_USERNAME}"
+      POSTGRES_DB: "${DBDEV_DATABASE}"
+    volumes:
+      - pg-bckndCodeChallenge:/var/lib/postgresql/data
+    ports:
+      - ${DBDEV_PORT}:${DBDEV_PORT}
+    networks:
+      - bckndCodeChallenge-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DBDEV_USERNAME} -d ${DBDEV_DATABASE}"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+    
+  bckndCodeChallenge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev-deps
+    container_name: bckndCodeChallenge
+    command: bash migrate.sh
+    env_file: .env
+    environment:
+      DATABASE_URL: ${DATABASE_ALEMBIC_URL}
+    volumes:
+      - .:/code
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - bckndCodeChallenge-network
+
+networks:
+  bckndCodeChallenge-network:
+volumes:
+  pg-bckndCodeChallenge:

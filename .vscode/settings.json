@@ -1,0 +1,13 @@
+{
+  "python.autoComplete.extraPaths": ["**/*.py"],
+  "python.formatting.provider": "black",
+  "python.analysis.extraPaths": ["**/*.py"],
+  "python.formatting.blackArgs": ["--line-length", "79"],
+  "python.linting.lintOnSave": true,
+  "python.linting.enabled": true,
+  "editor.formatOnSave": false,
+  "[python]": {
+    "editor.formatOnSave": true,
+  },
+  "python.linting.flake8Enabled": true,
+}
