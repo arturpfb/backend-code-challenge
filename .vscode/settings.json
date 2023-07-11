@@ -1,6 +1,6 @@
 {
   "python.autoComplete.extraPaths": ["**/*.py"],
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "python.analysis.extraPaths": ["**/*.py"],
   "python.formatting.blackArgs": ["--line-length", "79"],
   "python.linting.lintOnSave": true,
@@ -8,6 +8,7 @@
   "editor.formatOnSave": false,
   "[python]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
   },
   "python.linting.flake8Enabled": true,
 }
