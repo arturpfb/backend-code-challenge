@@ -19,10 +19,10 @@ depends_on = None
 def upgrade():
     op.execute(
         """
-            create table if not exists public.medusa
+            create table if not exists public.codechallenge
             (
                 id                      serial not null
-                                        constraint medusa_pkey
+                                        constraint codechallenge_pkey
                                         primary key,
                 name                    varchar(20),
                 last_modified_db        timestamptz default now(),
@@ -33,4 +33,4 @@ def upgrade():
 
 
 def downgrade():
-    op.execute("drop table if exists public.medusa")
+    op.execute("drop table if exists public.codechallenge")
