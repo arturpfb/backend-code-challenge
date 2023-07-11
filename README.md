@@ -12,7 +12,25 @@ Bom desafio!
 
 # O Desafio
 
-TODO
+Primeiramente, obrigado por aceitar o desafio! Esperamos que a realização do mesmo seja proveitosa tanto para nossa avaliação como para você, aumentando sua capacidade de resolução de problemas ou até mesmo colocando mais um projeto em seu portfólio.
+
+Então, vamos ao que interessa: seu desafio é criar uma aplicação em Python que consome uma API pública de meteorologia e uma API pública de dados geográficos e, a partir daí, performa análises e tarefas variadas utilizando Python e SQL. A estrutura base da aplicação já existe, queremos que você dedique seu tempo criando a conexão da aplicação com as APIs externas e realizando as tarefas esperadas. Sinta-se à vontade para usar sua criatividade e incrementar o projeto, afinal, ele agora é seu!
+
+* Utilize as APIs OpenWeatherMap (https://openweathermap.org/) e GeoNames API (http://www.geonames.org/export/web-services.html) para realizar o desafio;
+* Utilizando PostgreSQL e rodando as migrations localmente, crie tabela(s) que serão responsáveis por armazenar os dados meteorológicos e geográficos. Aqui, a modelagem do banco fica a seu critério -- respeitando, é claro, padrões de tipos de dados e etc;
+* Crie um endpoint com uma rota GET, que recebe como parâmetro o nome de uma cidade. Faça requisições nas APIs externas para buscar informações geográficas e meteorológicas relacionadas à essa cidade;
+* Guarde essas informações no banco;
+* Retorne um json com informações pertinentes da cidade/meteorologia;
+* Crie parâmetros e/ou rotas adicionais (fica a seu critério) considerando tanto condições climáticas quanto locais específicos para buscar informações como:
+** Um mapa de cidades mais populosas de acordo com um clima específico;
+** A temperatura média, umidade, velocidade do vento e etc de uma cidade dado um range de datas;
+** (BONUS) Qualquer parâmetro adicional que você queira aceitar para performar análises nas tabelas e realizar requisições diferentes nas APIs externas.
+
+## Observações adicionais
+
+* Você é livre para utilizar quaisquer libs adicionais que desejar;
+* Escreva código limpo, eficiente e fácil de dar manutenção;
+* Faça os tratamentos de erro necessários, tanto nas requisições para a sua própria API quanto para as APIs externas.
 
 ## Requisitos Técnicos
 
