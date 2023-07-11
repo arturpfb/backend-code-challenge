@@ -8,7 +8,7 @@ from flask import Blueprint
 from .healthcheck import HealthCheck
 
 
-def setup_blueprint():
+def healthcheck_blueprint():
     """Retorna a blueprint de healthcheck."""
     blueprint = Blueprint("healthcheck", __name__)
 

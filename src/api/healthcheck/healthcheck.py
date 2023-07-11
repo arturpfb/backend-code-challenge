@@ -11,13 +11,15 @@ class HealthCheck(MethodView):
     """A healthcheck endpoint, used to monitor the health of this app."""
 
     def get(self):
-        is_medusa_db_healthy = Postgres(backend_code_challenge_pool).health_check()
+        is_codechallenge_db_healthy = Postgres(
+            backend_code_challenge_pool
+        ).health_check()
 
         healthy = "db is healthy"
         unhealthy = "db is unhealthy, database connection error"
 
         message = {
-            "backend_code_challenge_db": f"{healthy if is_medusa_db_healthy else unhealthy}"
+            "backend_code_challenge_db": f"{healthy if is_codechallenge_db_healthy else unhealthy}"
         }
 
         return {

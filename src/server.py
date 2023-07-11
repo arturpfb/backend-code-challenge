@@ -10,7 +10,7 @@ from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from logger import LOGGER
 from config import APP_NAME, SQLALCHEMY_DATABASE_URI, PORT, DEBUG
 
-from api.healthcheck import setup_blueprint as healthcheck_blueprint
+from api.healthcheck import healthcheck_blueprint
 
 
 def setup_migrations(app):
@@ -56,7 +56,6 @@ CORS(app)
 def server_request():
     print(request.args.get("param"))
     return "served"
-
 
 
 def register_blueprints(app):
