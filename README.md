@@ -46,7 +46,7 @@ Seu desafio é utilizar a aplicação REST em Python Flask cedida aqui para:
   * Estes dados devem ser retornados em formato JSON, com todas as informações pertinentes.
   * Quais dados agregados devem ser retornados vai da sua criatividade, mas temos alguns exemplos legais:
     * Um mapa de cidades mais populosas de acordo com uma condição climática específica
-    * Top X (aqui, definido por um parametro do endpoint) cidades para alguma medida, como vento ou umidade
+    * Top X (aqui, definido por um parâmetro do endpoint) cidades para alguma medida, como vento ou umidade
     * Com a completude da api do IBGE, outros dados podem ser explorados, caso desejado.
 
 Você não precisa usar TODOS os dados fornecidos pelas APIs externas, a ideia é te dar liberdade para utilizar e cruzar as informações da maneira que achar necessário.
