@@ -21,11 +21,11 @@ Bom desafio!
 
 ## Comandos básicos do projeto
 
-`docker compose up --build` Levanta a imagem da aplicação local, aceitando requisições na porta 3000, e cria uma instância do banco local, na porta 5434, com todas as migrations que constam na pasta src/migrations/versions
+`docker compose up --build`: Levanta a imagem da aplicação local, aceitando requisições na porta 3000, e cria uma instância do banco local, na porta 5434, com todas as migrations que constam na pasta src/migrations/versions
 
 com o terminal na pasta migrations:
 
-`alembic revision -m "mensagem da nova revisão"` Cria uma nova revisão, usando como detalhamento a mensagem escrita 
+`alembic revision -m "mensagem da nova revisão"`: Cria uma nova revisão, usando como detalhamento a mensagem escrita 
 
 # O Desafio
 
