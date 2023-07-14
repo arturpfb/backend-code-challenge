@@ -41,7 +41,7 @@ Utilizaremos como fonte para o preenchimento das nossas consultas duas apis naci
 
 Seu desafio é utilizar a aplicação REST em Python Flask cedida aqui para:
 * Gerenciar um banco de dado Postgres, criando migrations para gerar as tabelas necessárias para a operação da api, de acordo com os dados que esta precisará ceder. O schema utilizado fica a seu critério!
-* Preencher nas tabelas acima os dados demográficos e meteorologicos necessários para esta operar. Aqui, fica em aberto: Este preenchimento pode ser dar por rotas nesta própria api, ou por rotinas aparte, a escolha fica a seu encargo.
+* Preencher nas tabelas acima os dados demográficos e meteorológicos necessários para esta operar. Aqui, fica em aberto: Este preenchimento pode se dar por rotas nesta própria api, ou por rotinas a parte, a escolha fica a seu encargo.
 * Criar os endpoints de consulta, que retornarão os dados desejados, com aceitação de parâmetros que podem ser interessantes para limitação deste retorno, como por exemplo o nome da cidade desejada.
   * Estes dados devem ser retornados em formato JSON, com todas as informações pertinentes.
   * Quais dados agregados devem ser retornados vai da sua criatividade, mas temos alguns exemplos legais:
