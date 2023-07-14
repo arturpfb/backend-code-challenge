@@ -29,7 +29,7 @@ com o terminal na pasta migrations:
 
 # O Desafio
 
-Primeiramente, obrigado por aceitar o desafio! Esperamos que a realização do mesmo seja proveitosa tanto para nossa avaliação como para você, aumentando sua capacidade de resolução de problemas.
+Primeiramente, obrigado por aceitar o desafio! Esperamos que a realização do mesmo seja proveitosa tanto para você quanto para nossa avaliação, aumentando sua capacidade de resolução de problemas.
 
 Então, vamos ao que interessa. 
 
