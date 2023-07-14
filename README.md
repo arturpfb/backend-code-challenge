@@ -64,7 +64,7 @@ Sinta-se à vontade para usar sua criatividade e incrementar o projeto, afinal, 
 
 ## Critérios de Avaliação
 
-O desafio será avaliado através de cinco critérios.
+O desafio será avaliado através de quatro critérios.
 
 ### Entrega
 
