@@ -17,7 +17,7 @@ Bom desafio!
   * Docker
   * Alembic
   * Poetry
-* Será necessário criar um arquivo .env, do qual a api irá se basear. Cedemos um example dos valores sugeridos, mas faça as alterações desejadas.
+* Será necessário criar um arquivo .env, do qual a api irá se basear. Cedemos um .env.example dos valores sugeridos, mas faça as alterações desejadas.
 
 ## Comandos básicos do projeto
 
