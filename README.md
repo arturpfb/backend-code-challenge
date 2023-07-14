@@ -89,8 +89,3 @@ O desafio será avaliado através de cinco critérios.
 * O código possibilita expansão para novas funcionalidades?
 * O código é _Don't Repeat Yourself_?
 * O código é fácil de compreender?
-
-### Controle de Qualidade (PLUS)
-
-* O código possui testes unitários?
-* O código possui teste de cobertura?
