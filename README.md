@@ -39,7 +39,7 @@ Utilizaremos como fonte para o preenchimento das nossas consultas duas apis naci
 * IBGE (https://servicodados.ibge.gov.br/api/docs/agregados?versao=3)
   * Aqui, obteremos informações demográficas a respeito de diversas cidades/regiões do país.
 
-Seu desafio é utilizar a aplicação rest em Python Flask cedida aqui para:
+Seu desafio é utilizar a aplicação REST em Python Flask cedida aqui para:
 * Gerenciar um banco de dado Postgres, criando migrations para gerar as tabelas necessárias para a operação da api, de acordo com os dados que esta precisará ceder. O schema utilizado fica a seu critério!
 * Preencher nas tabelas acima os dados demográficos e meteorologicos necessários para esta operar. Aqui, fica em aberto: Este preenchimento pode ser dar por rotas nesta própria api, ou por rotinas aparte, a escolha fica a seu encargo.
 * Criar os endpoints de consulta, que retornarão os dados desejados, com aceitação de parâmetros que podem ser interessantes para limitação deste retorno, como por exemplo o nome da cidade desejada.
