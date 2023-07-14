@@ -49,6 +49,8 @@ Seu desafio é utilizar a aplicação rest em Python Flask cedida aqui para:
     * Top X (aqui, definido por um parametro do endpoint) cidades para alguma medida, como vento ou umidade
     * Com a completude da api do IBGE, outros dados podem ser explorados, caso desejado.
 
+Você não precisa usar TODOS os dados fornecidos pelas APIs externas, a ideia é te dar liberdade para utilizar e cruzar as informações da maneira que achar necessário.
+
 Sinta-se à vontade para usar sua criatividade e incrementar o projeto, afinal, ele agora é seu!
 
 ## Observações adicionais
