@@ -12,7 +12,7 @@ Bom desafio!
 
 # O Desafio
 
-Primeiramente, obrigado por aceitar o desafio! Esperamos que a realização do mesmo seja proveitosa tanto para nossa avaliação como para você, aumentando sua capacidade de resolução de problemas ou até mesmo colocando mais um projeto em seu portfólio.
+Primeiramente, obrigado por aceitar o desafio! Esperamos que a realização do mesmo seja proveitosa tanto para nossa avaliação como para você, aumentando sua capacidade de resolução de problemas.
 
 Então, vamos ao que interessa: seu desafio é criar uma aplicação em Python que consome uma API pública de meteorologia e uma API pública de dados geográficos e, a partir daí, performa análises e tarefas variadas utilizando Python e SQL. A estrutura base da aplicação já existe, queremos que você dedique seu tempo criando a conexão da aplicação com as APIs externas e realizando as tarefas esperadas. Sinta-se à vontade para usar sua criatividade e incrementar o projeto, afinal, ele agora é seu!
 
