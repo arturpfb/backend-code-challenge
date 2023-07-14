@@ -79,14 +79,14 @@ O desafio será avaliado através de quatro critérios.
 * O código está bem estruturado?
 * O código está fluente na linguagem?
 
-### Documentação
-
-* O código foi entregue com um arquivo de README claro de como se guiar, e dos endpoints desenvolvidos?
-* Os commits são pequenos e consistentes?
-* As mensagens de commit são claras?
-
 ### Código Limpo
 
 * O código possibilita expansão para novas funcionalidades?
 * O código é _Don't Repeat Yourself_?
 * O código é fácil de compreender?
+
+### Documentação (Desejável, porém não obrigatório)
+
+* O código foi entregue com um arquivo de README claro de como se guiar, e dos endpoints desenvolvidos?
+* Os commits são pequenos e consistentes?
+* As mensagens de commit são claras?
