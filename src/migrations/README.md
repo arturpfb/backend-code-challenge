@@ -14,6 +14,6 @@ alembic revision -m "{mensagem da migration}"
 
 Com este, um novo file será criado seguindo o template, e preenchendo as ordens das revisions.
 
-Você deverá então preencher os processos de upgrade e downgrade da revision, seguindo os outros modelos (mesmo formato do nosso dbup)
+Você deverá então preencher os processos de upgrade e downgrade da revision, seguindo os outros modelos
 
 Lembre-se de que as migrations serão rodadas na mesma ordem em que são inseridas, portanto siga uma ordem cronológica que não prejudique a arquitetura e subsequente uso das suas tabelas.
