@@ -37,7 +37,7 @@ Utilizaremos como fonte para o preenchimento das nossas consultas duas apis naci
 * Brasil api (https://brasilapi.com.br/docs)
   * Aqui, a partir da subdivisão CPTEC, obteremos informações climáticas atuais em capitais do país.
 * IBGE (https://servicodados.ibge.gov.br/api/docs/agregados?versao=3)
-  * Aqui, obteremos informações demográficas a respeito de diversas cidades/regiões do país.
+  * Aqui, obteremos informações demográficas a respeito de diversas cidades/regiões do país (sugerimos __fortemente__ utilizar o _"Query Builder"_ da página).
 
 Seu desafio é utilizar a aplicação REST em Python Flask cedida aqui para:
 * Gerenciar um banco de dado Postgres, criando migrations para gerar as tabelas necessárias para a operação da api, de acordo com os dados que esta precisará ceder. O schema utilizado fica a seu critério!
